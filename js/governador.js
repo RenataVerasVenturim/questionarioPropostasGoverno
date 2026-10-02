@@ -7,29 +7,29 @@ const candidatos = {
     A: {
         nome: "Eduardo Paes",
         perfil: "Gestão eficiente e pragmatismo regional",
-        foto: "../assets/fotos/candidato-a.jpg",
-        pdf: "../assets/propostas/candidato-a.pdf"
+        foto: "assets/fotos/candidato-a.jpg",
+        pdf: "assets/propostas/candidato-a.pdf"
     },
 
     B: {
         nome: "Anthony Garotinho",
         perfil: "Proteção social e programas históricos",
-        foto: "../assets/fotos/candidato-b.jpg",
-        pdf: "../assets/propostas/candidato-b.pdf"
+        foto: "assets/fotos/candidato-b.jpg",
+        pdf: "assets/propostas/candidato-b.pdf"
     },
 
     C: {
         nome: "Pedro Ruas",
         perfil: "Ordem pública, metas e segurança integrada",
-        foto: "../assets/fotos/candidato-c.jpg",
-        pdf: "../assets/propostas/candidato-c.pdf"
+        foto: "assets/fotos/candidato-c.jpg",
+        pdf: "assets/propostas/candidato-c.pdf"
     },
 
     D: {
         nome: "WILLIAM SIRI",
         perfil: "Direitos humanos, serviços públicos diretos e justiça socioambiental",
-        foto: "../assets/fotos/candidato-d.jpg",
-        pdf: "../assets/propostas/candidato-d.pdf"
+        foto: "assets/fotos/candidato-d.jpg",
+        pdf: "assets/propostas/candidato-d.pdf"
     }
 
 };
@@ -207,8 +207,7 @@ function mostrarCandidatos() {
                     <a
                         class="pdf"
                         href="${candidato.pdf}"
-                        target_blank
-                        
+                        target="_blank"
                     >
                         Ver proposta
                     </a>
@@ -232,7 +231,6 @@ function mostrarPerguntas() {
 
     perguntasHTML.innerHTML = "";
 
-
     perguntas.forEach(function(pergunta, indice) {
 
         let html = `
@@ -247,7 +245,7 @@ function mostrarPerguntas() {
 
 
         // FOR...IN
-        // percorre A, B, C e D
+        // Percorre A, B, C e D
 
         for (let letra in pergunta.opcoes) {
 
@@ -474,10 +472,10 @@ function mostrarResultado(pontuacao) {
                     <a
                         class="pdf"
                         href="${candidato.pdf}"
-                        download
+                        target="_blank"
                     >
 
-                        Baixar plano de governo
+                        Ver plano de governo
 
                     </a>
 
@@ -565,7 +563,6 @@ botaoLimpar.addEventListener(
         window.scrollTo({
 
             top: 0,
-
             behavior: "smooth"
 
         });

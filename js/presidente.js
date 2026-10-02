@@ -51,7 +51,6 @@ const candidatos = {
 };
 
 
-
 // ======================================================
 // ELEMENTOS DO HTML
 // ======================================================
@@ -65,7 +64,6 @@ const formulario = document.getElementById("questionario");
 const resultado = document.getElementById("resultado");
 
 const botaoLimpar = document.getElementById("limpar");
-
 
 
 // ======================================================
@@ -84,6 +82,7 @@ for (let letra in candidatos) {
                 src="${candidato.foto}" 
                 alt="Foto de ${candidato.nome}"
             >
+
             <h3>
                 ${candidato.nome}
             </h3>
@@ -108,7 +107,6 @@ for (let letra in candidatos) {
     `;
 
 }
-
 
 
 // ======================================================
@@ -316,7 +314,6 @@ for (let indice in perguntas) {
 }
 
 
-
 // ======================================================
 // CALCULAR COMPARAÇÃO
 // ======================================================
@@ -329,15 +326,10 @@ formulario.addEventListener("submit", function (event) {
     let pontuacao = {
 
         A: 0,
-
         B: 0,
-
         C: 0,
-
         D: 0,
-
         E: 0,
-
         F: 0
 
     };
@@ -373,7 +365,6 @@ formulario.addEventListener("submit", function (event) {
         return;
 
     }
-
 
 
     // ==================================================
@@ -449,7 +440,6 @@ formulario.addEventListener("submit", function (event) {
     resultado.classList.remove("escondido");
 
 });
-
 
 
 // ======================================================
