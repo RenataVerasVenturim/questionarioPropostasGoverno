@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Questionário de Alinhamento — Presidente 2026
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="container">
+
+        <a
+            href="index.html"
+            class="voltar"
+        >
+            ← Voltar
+        </a>
+
+
+        <span class="badge">
+            ELEIÇÕES 2026
+        </span>
+
+
+        <h1>
+            Questionário de Alinhamento aos Planos de Governo
+        </h1>
+
+
+        <p>
+            Como seu Secretário, elaborei este Questionário
+            de Alinhamento Político e Programático, fundamentado
+            nas propostas de governo cadastradas neste projeto.
+        </p>
+
+
+        <p>
+            O questionário possui 6 eixos temáticos essenciais.
+            Em cada questão, selecione a alternativa que melhor
+            expressa seus princípios, valores e prioridades
+            para o país.
+        </p>
+
+
+        <p class="aviso">
+            O resultado é uma comparação matemática entre suas
+            respostas e as propostas cadastradas. Não constitui
+            recomendação de voto.
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<main class="container">
+
+
+    <!-- ================================================
+         PLANOS
+    ================================================= -->
+
+    <section class="propostas">
+
+        <h2>
+            Planos de governo
+        </h2>
+
+
+        <div
+            id="candidatos"
+            class="grid-candidatos">
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================
+         QUESTIONÁRIO
+    ================================================= -->
+
+    <form id="questionario">
+
+        <div id="perguntas"></div>
+
+
+        <div class="botoes">
+
+            <button
+                type="button"
+                id="limpar"
+                class="btn secundario"
+            >
+                Limpar
+            </button>
+
+
+            <button
+                type="submit"
+                class="btn principal"
+            >
+                Ver comparação
+            </button>
+
+        </div>
+
+    </form>
+
+
+
+    <!-- ================================================
+         RESULTADO
+    ================================================= -->
+
+    <section
+        id="resultado"
+        class="resultado escondido"
+    >
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            Projeto informativo independente.
+            Consulte os documentos oficiais para conhecer
+            integralmente as propostas.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/presidente.js"></script>
+
+</body>
+
+</html>
