@@ -5,6 +5,7 @@
 const candidatos = {
 
     A: {
+        numero: "55",
         nome: "Eduardo Paes",
         perfil: "Gestão eficiente e pragmatismo regional",
         foto: "assets/fotos/candidato-a.jpg",
@@ -12,6 +13,7 @@ const candidatos = {
     },
 
     B: {
+        numero: "10",
         nome: "Anthony Garotinho",
         perfil: "Proteção social e programas históricos",
         foto: "assets/fotos/candidato-b.jpg",
@@ -19,21 +21,26 @@ const candidatos = {
     },
 
     C: {
-        nome: "Pedro Ruas",
+        numero: "22",
+        nome: "Douglas Ruas",
         perfil: "Ordem pública, metas e segurança integrada",
         foto: "assets/fotos/candidato-c.jpg",
         pdf: "assets/propostas/candidato-c.pdf"
     },
 
     D: {
-        nome: "WILLIAM SIRI",
+        numero: "50",
+        nome: "William Siri",
         perfil: "Direitos humanos, serviços públicos diretos e justiça socioambiental",
         foto: "assets/fotos/candidato-d.jpg",
         pdf: "assets/propostas/candidato-d.pdf"
     }
-
 };
 
+
+// ============================================================
+// PERGUNTAS
+// ============================================================
 
 // ============================================================
 // PERGUNTAS
@@ -43,21 +50,21 @@ const perguntas = [
 
     {
         titulo:
-            "1. Qual deve ser a estratégia prioritária do Estado no combate ao crime organizado e à violência?",
+            "1. Como o Estado deve agir para combater a violência e o crime organizado (milícias e tráfico)?",
 
         opcoes: {
 
             A:
-                "Foco no patrulhamento territorial por indicadores criminais, fortalecimento das investigações financeiras contra milícias e facções, e escolha estritamente técnica dos comandantes de batalhões e delegados.",
+                "Focar o policiamento nos bairros com mais crimes, cortar o dinheiro do crime organizado e escolher os chefes da polícia por capacidade técnica, sem indicação de políticos.",
 
             B:
-                "Enfrentamento direto com foco em inteligência e tecnologia específica, aliado a programas de prevenção social e valorização das forças policiais.",
+                "Usar tecnologia de inteligência (como rastrear fuzis e criar delegacia especial anti-facção), valorizar os policiais e criar projetos sociais para afastar jovens do crime.",
 
             C:
-                "Restabelecimento da autoridade e da ordem pública por meio do Escudo Fluminense, com reconhecimento facial, drones nas divisas, scanners de carga e blitzes integradas.",
+                "Ocupar o território com presença policial constante, usar câmeras com reconhecimento facial, drones nas divisas, blitzes e revistas para fechar as rotas do crime.",
 
             D:
-                "Modelo centrado na proteção da vida e direitos humanos, prevenção social da violência, fim das indicações políticas nas polícias e tratamento do uso de drogas como saúde pública."
+                "Focar na proteção da vida e nos direitos humanos, criar oportunidades sociais para a juventude negra, acabar com indicações políticas nas polícias, acabar com revistas vexatórias e tratar o uso de drogas como saúde pública."
 
         }
     },
@@ -65,21 +72,21 @@ const perguntas = [
 
     {
         titulo:
-            "2. Como a rede estadual de saúde e as filas de atendimento devem ser organizadas?",
+            "2. Qual é a melhor forma de melhorar os hospitais e acabar com as filas na saúde?",
 
         opcoes: {
 
             A:
-                "Recuperando a eficiência dos hospitais estaduais e UPAs, contratando especialistas, garantindo repasses aos municípios e humanizando o atendimento.",
+                "Arrumar os hospitais estaduais e UPAs, contratar mais médicos especialistas, garantir remédios e repassar o dinheiro em dia para as prefeituras.",
 
             B:
-                "Reorganizando a rede na Rede Fluminense de Cuidado, com fila transparente auditada, SOS Odonto / Hospital do Dente e auditoria geral.",
+                'Organizar uma fila única e transparente na internet, criar hospitais e atendimento rápido para tratamento dentário ("SOS Odonto / Hospital do Dente") e fazer uma auditoria nas contas da saúde nos primeiros 100 dias.',
 
             C:
-                "Criando os CIAMEs para consultas e exames no mesmo dia, Hospitais de Alta Resolução e mutirões permanentes de cirurgias eletivas.",
+                "Criar centros regionais para o paciente fazer consulta e exame no mesmo dia (CIAME), ter hospitais para resolver casos graves rápido e fazer mutirões contínuos de cirurgias.",
 
             D:
-                "Reestatizando a gestão, encerrando gradualmente contratos com OSs/OSCIPs e terceirizadas, realizando concursos públicos e aplicando o mínimo constitucional de 12%."
+                "O próprio Estado administrar os hospitais diretamente (sem repassar para empresas privadas/OSs), contratar profissionais por concurso público e investir o mínimo obrigatório de 12% do orçamento na saúde."
 
         }
     },
@@ -87,21 +94,21 @@ const perguntas = [
 
     {
         titulo:
-            "3. Qual o modelo educacional prioritário para o Ensino Médio e a rede estadual?",
+            "3. Como deve ser a escola pública de Ensino Médio no estado?",
 
         opcoes: {
 
             A:
-                "Expansão do ensino médio técnico profissionalizante em tempo integral, alinhado às vocações econômicas regionais e fortalecimento da FAETEC.",
+                "Aumentar as escolas técnicas em tempo integral, ligando os cursos às profissões e indústrias de cada região do estado (fortalecendo a FAETEC).",
 
             B:
-                "Implantação do Programa Geração Fluminense e Geração Tech, pagamento do piso nacional do magistério e equipes de saúde nas escolas.",
+                "Oferecer cursos de tecnologia para os jovens (Geração Tech), pagar o piso nacional aos professores e levar atendimento de saúde e bombeiros para dentro das escolas.",
 
             C:
-                "Programa Aprendizagem Nota 10, alfabetização na idade certa, metas de desempenho e implementação de escolas cívico-militares.",
+                "Garantir que as crianças aprendam a ler na idade certa, premiar escolas que cumprirem metas de ensino e implantar escolas cívico-militares (militares cuidam da disciplina e professores do ensino).",
 
             D:
-                "Retomada dos CIEPs em tempo integral, renda de permanência escolar para inscritos no CadÚnico, laicidade do ensino religioso e unificação das carreiras."
+                "Voltar com o modelo dos CIEPs em tempo integral (com cultura, esporte e 4 refeições), dar uma bolsa em dinheiro para alunos carentes não abandonarem a escola e garantir o ensino laico (sem aula de religião)."
 
         }
     },
@@ -109,21 +116,21 @@ const perguntas = [
 
     {
         titulo:
-            "4. Qual deve ser a abordagem do Governo frente à vulnerabilidade social e à fome?",
+            "4. O que o governo deve fazer para ajudar quem está passando dificuldade financeira ou fome?",
 
         opcoes: {
 
             A:
-                "Parceria com prefeituras para elevar o IDH e atrair empresas para gerar emprego e renda.",
+                "Trabalhar junto com as prefeituras para atrair empresas, criar empregos e melhorar a estrutura das cidades.",
 
             B:
-                "Retomada e modernização de programas de transferência de renda e segurança alimentar, como Cheque Cidadão e Restaurantes Populares.",
+                "Voltar com programas práticos de ajuda direta, como o Cheque Cidadão (dinheiro na mão), Restaurantes Populares, Café do Trabalhador e Sopa da Cidadania.",
 
             C:
-                "Autonomia pelo trabalho, qualificação profissional em parceria com o Sistema S e regularização fundiária.",
+                "Dar cursos de capacitação profissional em parceria com o Sistema S para as pessoas conseguirem trabalho, além de entregar o documento de posse da casa própria para famílias vulneráveis.",
 
             D:
-                "Criação da Renda Básica Fluminense, fim da escala 6x1 nos contratos públicos e maior participação da agricultura familiar."
+                'Criar a "Renda Básica Fluminense" com um auxílio em dinheiro permanente para os 10% mais pobres, incentivar melhores condições de trabalho e comprar no mínimo 50% da merenda escolar de pequenos agricultores.'
 
         }
     },
@@ -131,27 +138,26 @@ const perguntas = [
 
     {
         titulo:
-            "5. Como o Estado deve gerir suas contas, tributos e investimentos em infraestrutura?",
+            "5. Como o governo deve cuidar do dinheiro público, impostos e obras?",
 
         opcoes: {
 
             A:
-                "Equilíbrio fiscal, gestão por resultados, atração de investimentos privados e expansão do BRT e da Linha 3 do Metrô.",
+                "Manter as contas equilibradas, atrair investimentos de empresas privadas (petróleo, gás, turismo) e fazer grandes obras de transporte, como a expansão do BRT e o metrô.",
 
             B:
-                "Alívio financeiro ao cidadão, redução da alíquota do IPVA e desburocratização dos serviços públicos.",
+                'Baixar impostos do cidadão (como cortar a taxa do IPVA de 4% para 2%), facilitar o pagamento de dívidas e oferecer serviços públicos no celular pelo aplicativo "Rio na Palma da Mão".',
 
             C:
-                "Gestão por metas, fiscalização rigorosa dos contratos, Meu Primeiro Emprego e segurança viária.",
+                'Cobrar metas rígidas dos serviços públicos (ex: estradas sem buracos), criar o programa "Meu Primeiro Emprego" para jovens e investir no conserto de rodovias.',
 
             D:
-                "Reestatização da CEDAE, fortalecimento dos servidores estatutários, Estado Esponja e paridade de gênero e raça no secretariado."
+                'O Estado voltar a controlar a água e o esgoto (reestatizar a CEDAE), contratar servidores por concurso, proteger as cidades contra enchentes ("Estado Esponja") e garantir igualdade de gênero e raça nos cargos do governo.'
 
         }
     }
 
 ];
-
 
 // ============================================================
 // ELEMENTOS DO HTML
@@ -197,7 +203,7 @@ function mostrarCandidatos() {
                 <div class="candidato-conteudo">
 
                     <h3>
-                        ${letra} — ${candidato.nome}
+                         ${candidato.nome}
                     </h3>
 
                     <p>
@@ -438,7 +444,7 @@ function mostrarResultado(pontuacao) {
                 <div>
 
                     <h3>
-                        ${candidato.nome}
+                        ${candidato.nome} — ${candidato.numero}
                     </h3>
 
                     <p>

@@ -1,6 +1,7 @@
 const candidatos = {
 
     A: {
+        numero: "13",
         nome: "Lula (PT)",
         vice: "Geraldo Alckmin (PSB)",
         perfil: "Desenvolvimento econômico, políticas sociais e atuação do Estado",
@@ -9,6 +10,7 @@ const candidatos = {
     },
 
     B: {
+        numero: "30",
         nome: "Romeu Zema (NOVO)",
         vice: "Eduardo Girão (NOVO)",
         perfil: "Responsabilidade fiscal, redução do Estado e liberdade econômica",
@@ -17,6 +19,7 @@ const candidatos = {
     },
 
     C: {
+        numero: "22",
         nome: "Flávio Bolsonaro (PL)",
         vice: "Alfredo Gaspar (PL)",
         perfil: "Segurança pública, redução de impostos e valores conservadores",
@@ -25,6 +28,7 @@ const candidatos = {
     },
 
     D: {
+        numero: "55",
         nome: "Ronaldo Caiado (PSD)",
         vice: "Gilberto Kassab (PSD)",
         perfil: "Responsabilidade fiscal, gestão pública e segurança",
@@ -33,6 +37,7 @@ const candidatos = {
     },
 
     E: {
+        numero: "14",
         nome: "Renan Santos (Missão)",
         vice: "Coronel Medina",
         perfil: "Transformação institucional, segurança e reformas estruturais",
@@ -41,6 +46,7 @@ const candidatos = {
     },
 
     F: {
+        numero: "70",
         nome: "Augusto Cury (Avante)",
         vice: "Júlio Delgado (Avante)",
         perfil: "Educação, empreendedorismo e desenvolvimento humano",
@@ -84,7 +90,7 @@ for (let letra in candidatos) {
             >
 
             <h3>
-                ${candidato.nome}
+                ${candidato.nome} 
             </h3>
 
             <p>
@@ -113,141 +119,187 @@ for (let letra in candidatos) {
 // PERGUNTAS
 // ======================================================
 
+// ======================================================
+// PERGUNTAS
+// ======================================================
+
 const perguntas = [
 
     {
-        eixo: "Economia, Impostos e Papel do Estado",
+        eixo: "Economia e Dinheiro Público",
 
-        titulo: "Qual visão melhor representa o modelo econômico que o Brasil deve adotar?",
+        titulo:
+            "Como o governo deve lidar com o dinheiro, impostos e empresas?",
 
         opcoes: {
 
-            A: "O Estado deve atuar como indutor do desenvolvimento sustentável, promovendo reindustrialização com transição ecológica, tributando super-ricos e fundos exclusivos para isentar a renda dos mais pobres, mantendo um arcabouço fiscal flexível que preserva os pisos sociais.",
+            A:
+                "O governo deve usar o dinheiro público para gerar empregos e criar indústrias ecológicas, cobrar mais impostos dos muito ricos para dar desconto aos mais pobres, e investir nos serviços básicos.",
 
-            B: "O governo deve realizar um choque fiscal rigoroso, enxugar a máquina, privatizar todas as empresas estatais, focar em parcerias público-privadas (PPPs) em todos os setores e cortar o IRPJ das empresas para atrair investimentos.",
+            B:
+                "O governo deve gastar o mínimo possível, vender todas as empresas estatais para empresários, cortar impostos das empresas e deixar o mercado funcionar com total liberdade.",
 
-            C: "É preciso promover um \"Tesouraço\" nos gastos públicos, cortar no mínimo 10 ministérios, revisar a reforma tributária para reduzir o IVA e priorizar a liberdade de mercado, a propriedade privada e a redução da carga fiscal sobre famílias e empresas.",
+            C:
+                "O governo deve cortar gastos com a própria máquina (fechar ministérios), diminuir impostos das famílias e das compras do dia a dia, e garantir a liberdade do comércio sem interferência do Estado.",
 
-            D: "A prioridade é a estabilização fiscal plurianual, fazendo as despesas obrigatórias crescerem abaixo do PIB nominal, eliminando privilégios e subsídios ineficientes sem aumentar impostos e mantendo a autonomia do Banco Central.",
+            D:
+                "O governo deve organizar as contas com regras rígidas para a dívida do país não crescer, tirar privilégios e auxílios desnecessários, sem criar novos impostos e mantendo a inflação baixa.",
 
-            E: "É necessária uma transformação sistêmica radical por meio de uma PEC de Transição, com Zonas Econômicas Especiais (ZEEs) com desburocratização em 15 dias e um plano regional de desdolarização na América do Sul.",
+            E:
+                "O governo precisa fazer uma reforma radical e imediata nas contas públicas, aprovar abertura de novos negócios em até 15 dias e diminuir a dependência do dólar.",
 
-            F: "O país deve adotar um \"Capitalismo Humanizado\", que combine liberdade econômica, simplificação tributária e responsabilidade fiscal com proteção social aos vulneráveis e criação de 10 mil Escolas de Empreendedorismo."
+            F:
+                "O país deve unir o livre mercado com o cuidado humano: facilitar a vida de quem abre empresas e gera empregos, mas garantindo ajuda aos mais pobres e ensinando empreendedorismo nas comunidades."
 
         }
     },
 
 
     {
-        eixo: "Segurança Pública e Combate ao Crime Organizado",
+        eixo: "Segurança Pública e Combate ao Crime",
 
-        titulo: "Como o Estado deve enfrentar as facções criminosas e a violência urbana?",
+        titulo:
+            "Qual a melhor forma de combater a violência e as facções criminosas?",
 
         opcoes: {
 
-            A: "Com coordenação federativa via PEC da Segurança Pública, fortalecimento do Sistema Único de Segurança Pública (SUSP), inteligência financeira para asfixiar o crime, controle de armas e uso de câmeras corporais em policiais.",
+            A:
+                "O governo federal deve trabalhar junto com estados e municípios, usar inteligência para cortar o dinheiro do crime organizado, controlar armas e exigir câmeras no uniforme dos policiais.",
 
-            B: "Concedendo autonomia para que os estados definam seus próprios crimes e penas, classificando facções como organizações terroristas e garantindo proteção legal e retaguarda jurídica para policiais no enfrentamento armado.",
+            B:
+                "Cada estado deve ter liberdade para criar suas próprias leis e punições, tratar facções como grupos terroristas e dar total apoio e proteção jurídica aos policiais em serviço.",
 
-            C: "Declarando facções como narcoterroristas (\"bandido armado com fuzil é abatido\"), reduzindo a maioridade penal de 18 para 16 anos, aplicando castração química para estupradores, construindo o Complexo Federal de Segurança Máxima TREVA e implantando o sistema de inteligência \"Muralha Brasileira\".",
+            C:
+                'Tratar criminosos armados com fuzil com tolerância zero ("fuzilou, é abatido"), reduzir a idade penal de 18 para 16 anos, dar penas bem mais duras e criar presídios de máxima segurança.',
 
-            D: "Com a Presidência assumindo o comando direto da segurança pública, isolando líderes criminosos no Regime Especial Disciplinar Antiterrorismo (REDAD), promovendo cooperação policial sul-americana (SULPOL) e confiscando bens do crime para restituir as vítimas.",
+            D:
+                "O Presidente da República deve liderar a segurança pessoalmente, isolar chefes de facções em presídios duríssimos sem contato externo, tomar os bens dos criminosos e devolver o dinheiro às vítimas.",
 
-            E: "Adotando de imediato a doutrina do \"Direito Penal do Inimigo\" (DPI) e a diretriz \"Prendeu, Matou\", com Estado de Defesa em áreas dominadas e isolamento estilo CECOT salvadorenho.",
+            E:
+                "Adotar regras rigorosas contra o crime organizado (tratar o criminoso como inimigo da sociedade), com ações diretas nas áreas dominadas e isolamento severo em presídios de segurança máxima.",
 
-            F: "Recriando o Ministério da Segurança Pública e implementando o Projeto FATO (Força de Alerta Total), com uso massivo de Inteligência Artificial e criação da Guarda Municipal FOCO com 5% do efetivo das cidades."
+            F:
+                "Usar tecnologia de ponta, inteligência artificial e câmeras integradas para prever e evitar que os crimes aconteçam, além de criar turmas de segurança comunitária nas cidades."
 
         }
     },
 
 
     {
-        eixo: "Assistência Social e Combate à Pobreza",
+        eixo: "Ajuda Social e Combate à Pobreza",
 
-        titulo: "Qual a diretriz ideal para os programas de transferência de renda e auxílio social?",
+        titulo:
+            "Como devem funcionar os auxílios financeiros do governo para quem precisa?",
 
         opcoes: {
 
-            A: "Expandir e fortalecer o Bolsa Família e o SUAS como direitos permanentes, garantindo também a política de valorização do salário mínimo com ganho real acima da inflação.",
+            A:
+                "Manter o Bolsa Família como um direito permanente e garantir que o salário mínimo aumente todo ano acima da inflação.",
 
-            B: "Reestruturar o auxílio através das Casas da Cidadania, estabelecendo um Plano de Desenvolvimento Social familiar individualizado com foco obrigatório na inserção no mercado de trabalho.",
+            B:
+                "Reorganizar os auxílios dando um plano individual para cada família, cobrando que a pessoa faça cursos e busque um emprego para deixar de depender do benefício.",
 
-            C: "Manter o apoio social como ponto de partida, construindo uma trilha de emancipação pela qualificação profissional, crédito acessível e formação de patrimônio para a autonomia da família.",
+            C:
+                "Garantir a ajuda financeira de início, mas dar cursos de capacitação, crédito para pequenos negócios e oportunidades para que a família consiga andar com as próprias pernas.",
 
-            D: "Unificar os cadastros no Sistema Nacional de Gestão Social Integrada, criando regras de transição suave em que o benefício cai gradualmente conforme a renda formal aumenta.",
+            D:
+                "Juntar todos os cadastros em um sistema único sem fraudes e fazer com que a pessoa não perca o auxílio de vez assim que conseguir um trabalho com carteira assinada, reduzindo o valor aos poucos.",
 
-            E: "Substituir gradualmente o formato assistencialista tradicional pelas Frentes Cidadãs, exigindo participação dos beneficiários em frentes de trabalho para prestação de serviços públicos comunitários.",
+            E:
+                "Exigir que quem recebe o benefício do governo participe de frentes de trabalho para prestar serviços comunitários à sua cidade em troca do apoio.",
 
-            F: "Valorizar o Bolsa Família como instrumento temporário contra a pobreza extrema e fomentar cooperativas de consumo e habitação para reduzir o custo de vida das famílias."
+            F:
+                "Apoiar o Bolsa Família, mas ajudar as pessoas a criarem pequenos negócios ou cooperativas (de compras de alimentos e moradia) para diminuir o custo de vida no bairro."
 
         }
     },
 
 
     {
-        eixo: "Gestão Pública, Política e Reformas Institucionais",
+        eixo: "Transparência e Gestão do Governo",
 
-        titulo: "De que forma a administração pública e o sistema político devem ser geridos?",
+        titulo:
+            "Como os políticos e os órgãos públicos devem ser controlados e geridos?",
 
         opcoes: {
 
-            A: "Com gestão democrática e participativa, realização de concursos públicos unificados e fortalecimento das instâncias de controle social e diálogo com movimentos civis.",
+            A:
+                "Fazer um governo transparente e participativo, contratando funcionários por concursos públicos e conversando com a sociedade e movimentos sociais.",
 
-            B: "Eliminando a possibilidade de sigilos de 100 anos, divulgando notas fiscais e dados abertos em tempo real e incentivando a união progressiva de pequenos municípios sem sustentação financeira.",
+            B:
+                "Acabar com o sigilo de 100 anos em documentos governamentais, mostrar todas as contas e notas fiscais na internet e incentivar cidades muito pequenas a se unirem para economizar dinheiro.",
 
-            C: "Realizando cortes drásticos em despesas administrativas e cargos comissionados, profissionalizando gestões de estatais e assegurando maior transparência e rastreabilidade nas emendas parlamentares.",
+            C:
+                "Cortar cargos indicados por políticos, enxugar a quantidade de ministérios e dar total transparência para mostrar para onde vai o dinheiro das emendas dos deputados.",
 
-            D: "Encaminhando no primeiro dia de mandato uma Proposta de Emenda à Constituição (PEC) para extinguir a reeleição no Executivo e contratando gestores públicos com metas e indicadores objetivos.",
+            D:
+                "Criar uma lei para proibir que presidentes sejam reeleitos e contratar diretores do governo cobrando metas claras de trabalho e resultados reais.",
 
-            E: "Instituindo a Lei de Responsabilidade Gerencial, que condiciona verbas de fundos partidários, emendas e a elegibilidade de políticos a metas objetivas de desempenho em saúde, educação e emprego.",
+            E:
+                "Punir políticos e cortar verbas de partidos ou governantes que não atingirem metas reais de melhoria na saúde, na educação e na geração de empregos.",
 
-            F: "Criando o programa Sociedade Está de Olho (SEO), que utiliza Inteligência Artificial e controle social ativo para auditar gastos e licitações em todos os órgãos públicos."
+            F:
+                "Usar inteligência artificial e a ajuda direta dos cidadãos para vigiar cada centavo do dinheiro público e identificar fraudes em compras e obras do governo."
 
         }
     },
 
 
     {
-        eixo: "Educação e Saúde Pública",
+        eixo: "Saúde e Educação",
 
-        titulo: "Qual estratégia deve guiar os investimentos em saúde e educação?",
+        titulo:
+            "O que deve ser prioridade nas escolas e postos de saúde?",
 
         opcoes: {
 
-            A: "Consolidação do SUS 100% público com o programa \"Agora tem Especialistas\", expansão da educação em tempo integral e ampliação do programa Pé-de-Meia contra a evasão escolar.",
+            A:
+                "Fortalecer o SUS 100% público trazendo mais médicos especialistas, ampliar as escolas de tempo integral e pagar um incentivo financeiro para o estudante não largar a escola (Pé-de-Meia).",
 
-            B: "Ampliação de parcerias público-privadas (PPPs) tanto na gestão de escolas quanto em unidades de saúde e hospitais públicos, integrando o esporte preventivo à saúde.",
+            B:
+                "Fazer parcerias com a iniciativa privada para gerenciar creches, escolas e hospitais públicos, buscando melhorar a qualidade e agilizar o atendimento.",
 
-            C: "Implementação do Voucher-Creche e Voucher Educacional para suprir a falta de vagas na rede pública, além da criação do prontuário eletrônico único no SUS Digital.",
+            C:
+                "Dar cupons/vouchers para a família matricular o filho em creche ou escola particular se faltar vaga no setor público, e criar o histórico médico digital único no SUS.",
 
-            D: "Foco na alfabetização e matemática até o final do 2º ano do ensino fundamental, com regulação transparente de filas na saúde com base no risco clínico do paciente.",
+            D:
+                "Garantir que toda criança saiba ler, escrever e fazer contas até os 7 anos (fim do 2º ano), e organizar a fila de exames do SUS de acordo com a gravidade de saúde do paciente.",
 
-            E: "Priorização total da educação básica sobre a superior, substituição do sistema de cotas por bolsas de estudo por mérito e uso de assistentes virtuais de IA (modelo \"DoctorSV\") na triagem da saúde.",
+            E:
+                "Focar o dinheiro da educação nas crianças e no ensino básico em vez das faculdades, e usar assistentes virtuais de inteligência artificial no atendimento da saúde.",
 
-            F: "Implementação do método pedagógico SOFT (Escola de Pensadores), criação da Telessaúde Brasil para desafogar o SUS e programas nacionais permanentes de saúde mental e gestão emocional."
+            F:
+                "Ensinar inteligência e saúde emocional nas escolas para evitar ansiedade e bullying, e usar consultas por videochamada (telessaúde) para acabar com as filas dos postos."
 
         }
     },
 
 
     {
-        eixo: "Proteção Social, Mulheres e Valores",
+        eixo: "Proteção Social e Valores",
 
-        titulo: "Qual a prioridade nas políticas transversais e direitos individuais?",
+        titulo:
+            "Quais políticas devem ser prioritárias para proteger as pessoas no dia a dia?",
 
         opcoes: {
 
-            A: "Enfrentamento estrutural ao racismo e à desigualdade de gênero, promoção de direitos de populações vulneráveis e valorização da diversidade cultural e das periferias.",
+            A:
+                "Combater o preconceito de raça e gênero, proteger os grupos mais vulneráveis e apoiar a diversidade cultural e o desenvolvimento das periferias.",
 
-            B: "Autonomia econômica da mulher pelo estímulo ao empreendedorismo, com planos individualizados de desenvolvimento familiar e apoio continuado a idosos.",
+            B:
+                "Ajudar a mulher a conquistar sua independência financeira pelo empreendedorismo e apoiar a família em todas as fases da vida.",
 
-            C: "Defesa intransigente da família, da vida desde a concepção e da liberdade religiosa, implementando o programa \"Brasil por Elas\" com a assistente virtual ClarIA e monitoramento eletrônico de agressores.",
+            C:
+                "Defender a família tradicional, a vida desde o início da gravidez e a liberdade religiosa, monitorando agressores de mulheres com tornozeleira eletrônica.",
 
-            D: "Criação da Secretaria Nacional da Segurança da Mulher, patrulhas Maria da Penha, perda total dos bens de feminicidas para indenizar as vítimas e prioridade absoluta à infância.",
+            D:
+                "Criar uma secretaria nacional focada na segurança da mulher, patrulhar bairros contra a violência doméstica e tirar os bens do agressor para indenizar a vítima.",
 
-            E: "Foco na retomada da ordem institucional, proteção territorial das famílias e substituição do assistencialismo pela disciplina e mérito individual.",
+            E:
+                "Focar no respeito às regras, na disciplina individual, no mérito próprio e na proteção das famílias contra o crime e a desordem.",
 
-            F: "Projeto \"Mulheres Vivas\" contra o feminicídio e focado no fortalecimento da autoestima feminina, combate à \"tirania da beleza\" nas redes sociais e proteção ativa da infância contra predadores digitais."
+            F:
+                "Proteger as mulheres contra o feminicídio com aplicativo de alerta e apoio psicológico, além de combater a pressão das redes sociais sobre a imagem e autoestima das jovens."
 
         }
     }
@@ -411,7 +463,7 @@ formulario.addEventListener("submit", function (event) {
                 <div>
 
                     <h3>
-                        ${candidato.nome}
+                        ${candidato.nome}— ${candidato.numero}
                     </h3>
 
                     <p>

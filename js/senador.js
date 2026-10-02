@@ -5,34 +5,38 @@
 const candidatos = {
 
     A: {
+        numero: "131",
         nome: "Benedita da Silva",
         partido: "PT",
         perfil:
-            "Pauta Social, Direitos Trabalhistas, Combate à Discriminação, Cotas e Cultura.",
+            "Foco na defesa dos direitos trabalhistas, combate à discriminação de raça e gênero, cotas na educação, apoio à cultura e fortalecimento da seguridade social.",
         foto: "assets/fotos/benedita.jpg"
     },
 
     B: {
+        numero: "221",
         nome: "Carlos Jordy",
         partido: "PL",
         perfil:
-            "Pauta Conservadora, Escola sem Partido, Segurança Pública e Defesa da Propriedade.",
+            "Foco na neutralidade ideológica na educação, flexibilização do acesso a armas de fogo, rigor penal sem acordos em corrupção e flexibilização de modelos de trabalho.",
         foto: "assets/fotos/jordy.jpg"
     },
 
     C: {
+        numero: "555",
         nome: "Pedro Paulo",
         partido: "PSD",
         perfil:
-            "Responsabilidade Fiscal, Meritocracia, Transparência de Dados e Eficiência Social.",
+            "Foco em responsabilidade e renegociação fiscal com condicionantes sociais, transparência em métricas policiais e portas de saída em programas de transferência de renda.",
         foto: "assets/fotos/pedropaulo.jpg"
     },
 
     D: {
+        numero: "222",
         nome: "Carlos Portinho",
         partido: "PL",
         perfil:
-            "Desenvolvimento Econômico, Liberdade Digital, Combate ao Crime Organizado no Setor Privado e Inclusão.",
+            "Foco no combate ao crime organizado no setor econômico, preservação da liberdade de expressão na internet, incentivo às Sociedades Anônimas do Futebol (SAF) e modernização de instrumentos de mercado.",
         foto: "assets/fotos/portinho.jpg"
     }
 
@@ -43,28 +47,32 @@ const candidatos = {
 // PERGUNTAS
 // ============================================================
 
+// ============================================================
+// PERGUNTAS
+// ============================================================
+
 const perguntas = [
 
     {
         titulo:
-            "1. Segurança Pública e Legislação Penal",
+            "1. Segurança Pública e Combate ao Crime",
 
         tema:
-            "Qual diretriz deve ser priorizada na política de segurança e combate à criminalidade?",
+            "O que deve ser a principal prioridade no combate à violência?",
 
         opcoes: {
 
             A:
-                "Agravar as penas e focar o combate aos crimes resultantes de preconceito de raça, cor e discriminação de gênero.",
+                "Punir com mais severidade os crimes de preconceito de raça, cor e gênero, tratando-os como crimes gravíssimos.",
 
             B:
-                "Garantir garantias e prerrogativas aos agentes de segurança pública e agravar as penas para crimes cometidos com o uso de simulacro de arma de fogo.",
+                "Facilitar o direito do cidadão ter e transportar armas para se defender e proibir acordos que reduzam penas para corruptos.",
 
             C:
-                "Tornar obrigatória a divulgação padronizada das taxas de elucidação de crimes pelas polícias e extinguir o benefício da saída temporária de presos (\"saidinhas\").",
+                "Obrigar as polícias a divulgarem claramente à população quantos crimes elas conseguem resolver de fato.",
 
             D:
-                "Reprimir com rigor organizações criminosas que atuam em grandes setores da economia e coibir práticas ilícitas no setor público e privado."
+                "Combater com rigor o crime organizado na economia e fazer o preso que trabalha contribuir para a Previdência (INSS)."
 
         }
 
@@ -73,24 +81,24 @@ const perguntas = [
 
     {
         titulo:
-            "2. Educação e Ambiente Escolar",
+            "2. Trabalho, Emprego e Renda",
 
         tema:
-            "Qual deve ser a orientação do Estado em relação às escolas e ao currículo educacional?",
+            "Como o governo deve cuidar dos empregos e dos direitos dos trabalhadores?",
 
         opcoes: {
 
             A:
-                "Incluir obrigatoriamente a disciplina de História e Cultura da África nos currículos e fortalecer a política de cotas raciais e sociais no ensino superior.",
+                "Proteger trabalhadores com menos garantias, como empregados domésticos, e proibir grávidas de trabalharem em locais perigosos à saúde.",
 
             B:
-                "Instituir o programa \"Escola sem Partido\" para evitar a doutrinação política e ideológica no ambiente escolar.",
+                "Permitir que patrão e empregado combinem horários flexíveis por hora, sem precisar seguir todas as regras da carteira assinada (CLT).",
 
             C:
-                "Condicionar os investimentos e repasses públicos na educação ao atingimento de metas de desempenho, meritocracia e transparência.",
+                "Exigir metas de saúde e educação das famílias do Bolsa Família para ajudá-las a conquistar independência do benefício.",
 
             D:
-                "Proteger a liberdade de expressão e garantir a capacitação de profissionais para o acolhimento de pessoas com deficiência ou condições comportamentais incomuns."
+                "Criar regras para empresas darem parte de suas ações aos funcionários e dar desconto em impostos para reformar os portos do país."
 
         }
 
@@ -99,24 +107,24 @@ const perguntas = [
 
     {
         titulo:
-            "3. Trabalho, Renda e Relações de Emprego",
+            "3. Educação, Cultura e Internet",
 
         tema:
-            "Qual modelo de regulação do trabalho e emprego você defende?",
+            "Qual deve ser o papel do governo na educação, na cultura e no que as pessoas dizem na internet?",
 
         opcoes: {
 
             A:
-                "Ampliar a proteção ao trabalho doméstico, estender o seguro-desemprego à categoria e proibir a exigência de atestado de gravidez na contratação.",
+                "Garantir cotas para negros e alunos pobres nas faculdades públicas e dar auxílio financeiro para o trabalhador acessar eventos culturais.",
 
             B:
-                "Permitir regimes mais flexíveis de jornada de trabalho e defender a desocupação imediata de propriedades privadas invadidas.",
+                "Criar o programa \"Escola sem Partido\" para impedir que professores façam propaganda política ou ideológica em sala de aula.",
 
             C:
-                "Criar leis de meritocracia no setor público, com acordos de resultados, e incentivar parcerias público-privadas (PPPs).",
+                "Exigir transparência e metas de qualidade antes de liberar dinheiro público para projetos e entidades sociais.",
 
             D:
-                "Regulamentar a contratação e remuneração justa de serviços de saúde e reabilitação no modelo de atenção domiciliar (Home Care)."
+                "Proteger a liberdade de expressão na internet, proibindo que postagens sejam apagadas sem decisão da Justiça, e apoiar eventos esportivos."
 
         }
 
@@ -125,24 +133,24 @@ const perguntas = [
 
     {
         titulo:
-            "4. Transparência, Dados e Liberdade Digital",
+            "4. Apoio Social e Cuidado com as Pessoas",
 
         tema:
-            "Como o governo deve atuar em relação à internet e à proteção de dados?",
+            "Como o governo deve ajudar e proteger a população?",
 
         opcoes: {
 
             A:
-                "Criar conselhos estatais com participação da sociedade civil para combater a discriminação e fiscalizar abusos contra o consumidor.",
+                "Criar leis severas contra o preconceito e abrir delegacias e centros de apoio especializados para mulheres e minorias.",
 
             B:
-                "Criar mecanismos de combate à intolerância ideológica e proibir a censura ou perseguição a opiniões políticas na internet.",
+                "Garantir que o governo seja neutro e fiscalize com rigor o dinheiro repassado para ONGs e associações.",
 
             C:
-                "Criar a Lei de Dados Abertos e proibir expressamente a comercialização ou cessão não autorizada de dados cadastrais dos cidadãos.",
+                "Pagar um valor extra no Bolsa Família para famílias que têm pessoas com deficiência.",
 
             D:
-                "Atualizar o Marco Civil da Internet para assegurar o devido processo legal e proteger a liberdade de expressão em remoções de conteúdo."
+                "Treinar policiais e agentes de segurança para atenderem com respeito e preparo pessoas com deficiência ou autismo."
 
         }
 
@@ -151,154 +159,24 @@ const perguntas = [
 
     {
         titulo:
-            "5. Programas Sociais e Assistência à População",
+            "5. Gestão do Dinheiro Público e Obras",
 
         tema:
-            "Qual o papel das políticas sociais do Estado?",
+            "Como o governo deve organizar as contas públicas e as melhorias nas cidades?",
 
         opcoes: {
 
             A:
-                "Garantir assistência médica, social e habitação integral pelo Estado para famílias em situação de extrema vulnerabilidade.",
+                "Criar áreas protegidas para cuidar da natureza e incentivar pequenos negócios comunitários.",
 
             B:
-                "Permitir o redirecionamento emergencial de verbas de fundos eleitorais ou partidários para o atendimento à saúde da população.",
+                "Fiscalizar de perto todas as contas e compras do governo para evitar desperdício e corrupção.",
 
             C:
-                "Pagar benefício adicional no Bolsa Família para famílias com membros com deficiência e criar \"portas de saída\" do programa vinculadas a metas de educação e saúde.",
+                "Permitir que prefeituras cobrem uma taxa para reformar áreas de comércio e cortar descontos de impostos quando o governo estiver sem dinheiro.",
 
             D:
-                "Obrigar a capacitação contínua de agentes de segurança pública para o atendimento humanizado a pessoas com deficiência."
-
-        }
-
-    },
-
-
-    {
-        titulo:
-            "6. Gestão Fiscal e Administração Pública",
-
-        tema:
-            "Qual mecanismo de gestão pública é mais adequado para a eficiência do Estado?",
-
-        opcoes: {
-
-            A:
-                "Fortalecer a gestão pública direta e a municipalização de serviços essenciais como o SUS.",
-
-            B:
-                "Exercer controle rigoroso sobre os gastos públicos e a aplicação de verbas em campanhas e órgãos governamentais.",
-
-            C:
-                "Condicionar a renegociação de dívidas de Estados e Municípios com a União ao cumprimento de metas sociais em saúde, educação e segurança.",
-
-            D:
-                "Determinar a obrigatoriedade do recebimento via Pix por órgãos do Governo Federal e divulgar com transparência a origem dos recursos de obras públicas."
-
-        }
-
-    },
-
-
-    {
-        titulo:
-            "7. Proteção à Infância, Consumidor e Aposentados",
-
-        tema:
-            "Como o Estado deve proteger os grupos mais vulneráveis?",
-
-        opcoes: {
-
-            A:
-                "Criar legislações rigorosas de combate à exploração e à violência de gênero e de raça.",
-
-            B:
-                "Aumentar as penas para quem expõe crianças e adolescentes a eventos com conteúdo de nudez ou lascívia ou faz falsa denúncia de crimes sexuais.",
-
-            C:
-                "Obrigar empresas prestadoras de serviço público a agendarem atendimento com hora marcada e proteger produtos essenciais do consumidor.",
-
-            D:
-                "Suspender descontos e mensalidades não autorizados cobrados por associações sobre aposentadorias e pensões."
-
-        }
-
-    },
-
-
-    {
-        titulo:
-            "8. Meio Ambiente, Propriedade e Uso do Solo",
-
-        tema:
-            "Qual deve ser a diretriz nacional para o meio ambiente e uso do solo?",
-
-        opcoes: {
-
-            A:
-                "Reduzir investimentos em matrizes de alto risco, como usinas nucleares, e focar na preservação comunitária e reservas biológicas.",
-
-            B:
-                "Garantir a reintegração de posse rápida e efetiva para proprietários rurais e urbanos contra invasões.",
-
-            C:
-                "Exigir contrapartidas socioambientais claras e transparência em concessões de serviços públicos.",
-
-            D:
-                "Readequar e redefinir limites de parques nacionais para conciliar a preservação ambiental com o ecoturismo e o desenvolvimento regional."
-
-        }
-
-    },
-
-
-    {
-        titulo:
-            "9. Saúde Pública e Emergências",
-
-        tema:
-            "Qual a prioridade no sistema de saúde e urgências?",
-
-        opcoes: {
-
-            A:
-                "Estruturar e expandir os Bancos de Olhos e de tecidos humanos integrados à rede do SUS.",
-
-            B:
-                "Destinar prioritariamente recursos de fundos públicos para o combate a epidemias e emergências sanitárias.",
-
-            C:
-                "Determinar que aeronaves da Força Aérea Brasileira (FAB) deem prioridade ao transporte de órgãos para transplante sobre o transporte de autoridades.",
-
-            D:
-                "Garantir o direito à assistência de fisioterapia e terapia ocupacional no atendimento domiciliar tanto no SUS quanto no setor privado."
-
-        }
-
-    },
-
-
-    {
-        titulo:
-            "10. Cultura, Memória e Identidade Nacional",
-
-        tema:
-            "Como o Estado deve valorizar a cultura e os símbolos nacionais?",
-
-        opcoes: {
-
-            A:
-                "Instituir o Dia Nacional da Consciência Negra (20 de novembro) como feriado nacional e apoiar a produção cultural comunitária.",
-
-            B:
-                "Declarar São José de Anchieta patrono da educação brasileira e combater o patrulhamento ideológico nas artes e na cultura.",
-
-            C:
-                "Proibir a poluição visual por propaganda eleitoral em vias públicas e eventos durante grandes momentos nacionais e internacionais.",
-
-            D:
-                "Garantir incentivos e segurança jurídica para o investimento privado no mercado esportivo, de grandes eventos e de entretenimento."
+                "Obrigar órgãos do governo a aceitarem pagamento por Pix e divulgar na internet de onde vem o dinheiro de cada obra."
 
         }
 
@@ -335,13 +213,15 @@ function mostrarCandidatos() {
 
     candidatosHTML.innerHTML = "";
 
+
     // FOR...IN
-    // Percorre A, B, C e D.
+    // Percorre A, B, C e D
 
     for (let letra in candidatos) {
 
         let candidato =
             candidatos[letra];
+
 
         candidatosHTML.innerHTML += `
 
@@ -355,7 +235,7 @@ function mostrarCandidatos() {
                 <div class="candidato-conteudo">
 
                     <h3>
-                        ${letra} — ${candidato.nome}
+                        ${candidato.nome} — ${candidato.numero}
                     </h3>
 
                     <p>
@@ -419,7 +299,8 @@ function mostrarPerguntas() {
             // FOR...IN
             // =================================================
             //
-            // Percorre A, B, C e D dentro de pergunta.opcoes.
+            // Percorre as propriedades A, B, C e D
+            // do objeto pergunta.opcoes
             //
 
             for (let letra in pergunta.opcoes) {
@@ -495,6 +376,7 @@ function calcularPontuacao() {
                 let letra =
                     resposta.value;
 
+
                 pontuacao[letra]++;
 
                 respondidas++;
@@ -543,13 +425,11 @@ function mostrarResultado(pontuacao) {
 
 
     // FOR...IN
-    // Percorre A, B, C e D.
 
     for (let letra in pontuacao) {
 
         if (
-            pontuacao[letra]
-            ===
+            pontuacao[letra] ===
             maiorPontuacao
         ) {
 
@@ -559,6 +439,10 @@ function mostrarResultado(pontuacao) {
 
     }
 
+
+    // ========================================================
+    // CABEÇALHO DO RESULTADO
+    // ========================================================
 
     let html = `
 
@@ -602,11 +486,10 @@ function mostrarResultado(pontuacao) {
 
 
     // ========================================================
-    // RESULTADOS
+    // RESULTADOS DOS CANDIDATOS
     // ========================================================
 
     // FOR...IN
-    // Percorre os candidatos A, B, C e D.
 
     for (let letra in pontuacao) {
 
@@ -614,18 +497,11 @@ function mostrarResultado(pontuacao) {
             candidatos[letra];
 
 
-        // Cada questão vale 10%.
-        //
-        // Como são 10 questões:
-        //
-        // 1 resposta = 10%
-        // 2 respostas = 20%
-        // 3 respostas = 30%
-        // ...
-        // 10 respostas = 100%
+        // Cada questão vale uma fração de 100%.
 
         let percentual =
-            pontuacao[letra] * 10;
+            pontuacao[letra] *
+            (100 / perguntas.length);
 
 
         let destaque = "";
@@ -656,7 +532,7 @@ function mostrarResultado(pontuacao) {
 
                     <h3>
 
-                        ${candidato.nome}
+                        ${candidato.nome}— ${candidato.numero}
 
                         <small>
                             (${candidato.partido})
@@ -674,6 +550,7 @@ function mostrarResultado(pontuacao) {
 
                     </p>
 
+
                     <div class="barra">
 
                         <div
@@ -682,6 +559,7 @@ function mostrarResultado(pontuacao) {
                         ></div>
 
                     </div>
+
 
                     <p>
 
@@ -701,14 +579,22 @@ function mostrarResultado(pontuacao) {
     }
 
 
+    // ========================================================
+    // COLOCAR RESULTADO NO HTML
+    // ========================================================
+
     resultadoHTML.innerHTML =
         html;
 
+
+    // Remove a classe que escondia o resultado
 
     resultadoHTML.classList.remove(
         "escondido"
     );
 
+
+    // Rola a página até o resultado
 
     resultadoHTML.scrollIntoView({
 
@@ -734,20 +620,23 @@ questionario.addEventListener(
             calcularPontuacao();
 
 
+        // Verifica se todas as perguntas foram respondidas
+
         if (
-            resultado.respondidas
-            <
+            resultado.respondidas <
             perguntas.length
         ) {
 
             alert(
-                "Responda todas as 10 perguntas antes de continuar."
+                `Responda todas as ${perguntas.length} perguntas antes de continuar.`
             );
 
             return;
 
         }
 
+
+        // Mostra o resultado
 
         mostrarResultado(
             resultado.pontuacao

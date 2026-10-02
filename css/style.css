@@ -1,569 +1,7 @@
-/* =====================================================
+/* ============================================================
    CONFIGURAÇÕES GERAIS
-===================================================== */
+============================================================ */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-
-    background-color: #f4f6f8;
-
-    color: #222;
-
-    line-height: 1.6;
-}
-
-
-/* =====================================================
-   CONTAINER PRINCIPAL
-===================================================== */
-
-main {
-    width: 90%;
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    padding: 40px 0 60px;
-}
-
-
-/* =====================================================
-   CABEÇALHO
-===================================================== */
-
-header {
-    background-color: white;
-
-    padding: 40px 30px;
-
-    margin-bottom: 30px;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 3px 12px rgba(0, 0, 0, 0.08);
-
-    text-align: center;
-}
-
-header h1 {
-    font-size: 36px;
-
-    margin-bottom: 15px;
-}
-
-header p {
-    max-width: 850px;
-
-    margin: 0 auto;
-
-    color: #555;
-
-    font-size: 17px;
-}
-
-
-/* =====================================================
-   LINK VOLTAR
-===================================================== */
-
-header a {
-    display: inline-block;
-
-    margin-bottom: 20px;
-
-    color: #333;
-
-    text-decoration: none;
-
-    font-weight: bold;
-}
-
-header a:hover {
-    text-decoration: underline;
-}
-
-
-/* =====================================================
-   QUESTIONÁRIO
-===================================================== */
-
-#questionario {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 25px;
-}
-
-
-/* =====================================================
-   CADA PERGUNTA
-===================================================== */
-
-.pergunta {
-    background-color: white;
-
-    padding: 30px;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 3px 12px rgba(0, 0, 0, 0.07);
-}
-
-
-/* =====================================================
-   EIXO
-===================================================== */
-
-.eixo {
-    color: #555;
-
-    font-size: 14px;
-
-    font-weight: bold;
-
-    text-transform: uppercase;
-
-    margin-bottom: 8px;
-}
-
-
-/* =====================================================
-   TÍTULO DA PERGUNTA
-===================================================== */
-
-.pergunta h2 {
-    font-size: 22px;
-
-    margin-bottom: 25px;
-
-    line-height: 1.4;
-}
-
-
-/* =====================================================
-   OPÇÕES
-===================================================== */
-
-.opcao {
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 12px;
-
-    padding: 18px;
-
-    margin-bottom: 12px;
-
-    border: 1px solid #ddd;
-
-    border-radius: 8px;
-
-    background-color: #fafafa;
-
-    cursor: pointer;
-
-    transition:
-        background-color 0.2s,
-        border-color 0.2s;
-}
-
-
-/* efeito quando passa o mouse */
-
-.opcao:hover {
-    background-color: #f0f2f4;
-
-    border-color: #999;
-}
-
-
-/* radio */
-
-.opcao input[type="radio"] {
-    margin-top: 5px;
-
-    cursor: pointer;
-
-    flex-shrink: 0;
-}
-
-
-/* letra A/B/C... */
-
-.opcao strong {
-    min-width: 25px;
-}
-
-
-/* texto da alternativa */
-
-.opcao span {
-    flex: 1;
-}
-
-
-/* =====================================================
-   BOTÃO CALCULAR
-===================================================== */
-
-#calcular {
-    display: block;
-
-    width: 100%;
-
-    margin-top: 30px;
-
-    padding: 18px;
-
-    border: none;
-
-    border-radius: 8px;
-
-    background-color: #222;
-
-    color: white;
-
-    font-size: 18px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: background-color 0.2s;
-}
-
-#calcular:hover {
-    background-color: #444;
-}
-
-
-/* =====================================================
-   RESULTADO
-===================================================== */
-
-#resultado {
-    margin-top: 40px;
-
-    padding: 30px;
-
-    background-color: white;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 3px 12px rgba(0, 0, 0, 0.08);
-}
-
-#resultado h2 {
-    font-size: 28px;
-
-    margin-bottom: 15px;
-}
-
-#resultado > p {
-    color: #666;
-
-    margin-bottom: 30px;
-}
-
-
-/* =====================================================
-   CONTAINER DOS CANDIDATOS
-===================================================== */
-
-.resultados-candidatos {
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap: 20px;
-}
-
-
-/* =====================================================
-   CARD DO CANDIDATO
-===================================================== */
-
-.resultado-candidato {
-    display: flex;
-
-    align-items: center;
-
-    gap: 20px;
-
-    padding: 20px;
-
-    border: 1px solid #ddd;
-
-    border-radius: 10px;
-
-    background-color: #fafafa;
-}
-
-
-/* =====================================================
-   FOTO
-===================================================== */
-
-.resultado-candidato img {
-    width: 100px;
-
-    height: 100px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    border: 3px solid #ddd;
-
-    flex-shrink: 0;
-}
-
-
-/* =====================================================
-   NOME
-===================================================== */
-
-.resultado-candidato h3 {
-    font-size: 20px;
-
-    margin-bottom: 5px;
-}
-
-
-/* =====================================================
-   PORCENTAGEM
-===================================================== */
-
-.resultado-candidato p {
-    margin-bottom: 8px;
-
-    color: #555;
-}
-
-.resultado-candidato p strong {
-    color: #222;
-
-    font-size: 18px;
-}
-
-
-/* =====================================================
-   LINK DO PDF
-===================================================== */
-
-.resultado-candidato a {
-    color: #222;
-
-    font-weight: bold;
-
-    text-decoration: none;
-}
-
-.resultado-candidato a:hover {
-    text-decoration: underline;
-}
-
-
-/* =====================================================
-   PÁGINA INICIAL
-===================================================== */
-
-.inicio {
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    padding: 60px 20px;
-}
-
-
-/* =====================================================
-   CABEÇALHO DA HOME
-===================================================== */
-
-.cabecalho {
-    text-align: center;
-
-    margin-bottom: 60px;
-}
-
-.cabecalho h1 {
-    font-size: 40px;
-
-    margin-bottom: 15px;
-}
-
-.cabecalho p {
-    font-size: 18px;
-
-    color: #555;
-}
-
-
-/* =====================================================
-   ESCOLHA PRESIDENTE / GOVERNADOR
-===================================================== */
-
-.escolha {
-    text-align: center;
-}
-
-.escolha h2 {
-    font-size: 28px;
-
-    margin-bottom: 30px;
-}
-
-
-/* =====================================================
-   CARDS DA PÁGINA INICIAL
-===================================================== */
-
-.opcoes-eleicao {
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap: 30px;
-}
-
-
-.card-eleicao {
-    display: block;
-
-    padding: 40px 30px;
-
-    background-color: white;
-
-    color: #222;
-
-    text-decoration: none;
-
-    border-radius: 15px;
-
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.08);
-
-    transition:
-        transform 0.2s,
-        box-shadow 0.2s;
-}
-
-
-.card-eleicao:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-
-.icone {
-    font-size: 50px;
-
-    margin-bottom: 20px;
-}
-
-
-.card-eleicao h3 {
-    font-size: 28px;
-
-    margin-bottom: 15px;
-}
-
-
-.card-eleicao p {
-    color: #666;
-
-    margin-bottom: 25px;
-}
-
-
-.card-eleicao span {
-    font-weight: bold;
-}
-
-
-/* =====================================================
-   RODAPÉ
-===================================================== */
-
-footer {
-    text-align: center;
-
-    margin-top: 60px;
-
-    color: #777;
-
-    font-size: 14px;
-
-    line-height: 1.6;
-}
-
-
-/* =====================================================
-   RESPONSIVIDADE
-===================================================== */
-
-@media (max-width: 800px) {
-
-    .resultados-candidatos {
-        grid-template-columns: 1fr;
-    }
-
-    .opcoes-eleicao {
-        grid-template-columns: 1fr;
-    }
-
-    header h1 {
-        font-size: 30px;
-    }
-
-    .cabecalho h1 {
-        font-size: 32px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    main {
-        width: 95%;
-    }
-
-    .pergunta {
-        padding: 20px;
-    }
-
-    .pergunta h2 {
-        font-size: 19px;
-    }
-
-    .opcao {
-        padding: 15px;
-    }
-
-    .resultado-candidato {
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-}
 * {
     box-sizing: border-box;
 }
@@ -571,15 +9,27 @@ footer {
 :root {
 
     --fundo: #f4f6f8;
+
     --branco: #ffffff;
+
     --texto: #17202a;
+
     --cinza: #66717d;
+
     --borda: #dfe4e8;
+
     --principal: #172b4d;
+
     --principal-hover: #0e1d35;
+
     --suave: #eef2f7;
 
 }
+
+
+/* ============================================================
+   BODY
+============================================================ */
 
 body {
 
@@ -599,14 +49,22 @@ body {
 }
 
 
+/* ============================================================
+   CONTAINER
+============================================================ */
+
 .container {
 
     width: min(1100px, 92%);
 
-    margin: auto;
+    margin: 0 auto;
 
 }
 
+
+/* ============================================================
+   HEADER
+============================================================ */
 
 header {
 
@@ -619,13 +77,17 @@ header {
 }
 
 
+/* ============================================================
+   BADGE
+============================================================ */
+
 .badge {
 
     display: inline-block;
 
     padding: 6px 12px;
 
-    border: 1px solid rgba(255,255,255,.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 
     border-radius: 20px;
 
@@ -636,6 +98,10 @@ header {
 }
 
 
+/* ============================================================
+   TÍTULOS
+============================================================ */
+
 h1 {
 
     font-size: clamp(2rem, 5vw, 3.2rem);
@@ -645,6 +111,10 @@ h1 {
 }
 
 
+/* ============================================================
+   TEXTOS DO HEADER
+============================================================ */
+
 header p {
 
     max-width: 800px;
@@ -653,6 +123,10 @@ header p {
 
 }
 
+
+/* ============================================================
+   AVISO
+============================================================ */
 
 .aviso {
 
@@ -665,12 +139,20 @@ header p {
 }
 
 
+/* ============================================================
+   SEÇÕES
+============================================================ */
+
 section {
 
     margin: 30px 0;
 
 }
 
+
+/* ============================================================
+   CARDS PRINCIPAIS
+============================================================ */
 
 .propostas,
 .pergunta,
@@ -687,6 +169,10 @@ section {
 }
 
 
+/* ============================================================
+   GRID DOS CANDIDATOS
+============================================================ */
+
 .grid-candidatos {
 
     display: grid;
@@ -699,6 +185,10 @@ section {
 }
 
 
+/* ============================================================
+   CARD DO CANDIDATO
+============================================================ */
+
 .candidato {
 
     border: 1px solid var(--borda);
@@ -707,8 +197,14 @@ section {
 
     overflow: hidden;
 
+    background: var(--branco);
+
 }
 
+
+/* ============================================================
+   FOTO DO CANDIDATO
+============================================================ */
 
 .candidato img {
 
@@ -723,6 +219,10 @@ section {
 }
 
 
+/* ============================================================
+   CONTEÚDO DO CARD DO CANDIDATO
+============================================================ */
+
 .candidato-conteudo {
 
     padding: 15px;
@@ -730,12 +230,22 @@ section {
 }
 
 
+/* ============================================================
+   NOME DO CANDIDATO
+============================================================ */
+
 .candidato h3 {
 
     margin-top: 0;
 
+    margin-bottom: 8px;
+
 }
 
+
+/* ============================================================
+   DESCRIÇÃO DO CANDIDATO
+============================================================ */
 
 .candidato p {
 
@@ -746,9 +256,15 @@ section {
 }
 
 
+/* ============================================================
+   BOTÃO / LINK DE PROPOSIÇÕES
+============================================================ */
+
 .pdf {
 
     display: inline-block;
+
+    margin-top: 10px;
 
     padding: 8px 12px;
 
@@ -766,6 +282,27 @@ section {
 
 }
 
+.pdf:hover {
+
+    background: #dfe6ef;
+
+}
+
+
+/* ============================================================
+   QUESTIONÁRIO
+============================================================ */
+
+#questionario {
+
+    width: 100%;
+
+}
+
+
+/* ============================================================
+   PERGUNTA
+============================================================ */
 
 .pergunta {
 
@@ -774,14 +311,37 @@ section {
 }
 
 
+/* ============================================================
+   TÍTULO DA PERGUNTA
+============================================================ */
+
 .pergunta h2 {
 
     font-size: 18px;
 
     margin-top: 0;
 
+    margin-bottom: 10px;
+
 }
 
+
+/* ============================================================
+   TEMA DA PERGUNTA
+============================================================ */
+
+.pergunta > p {
+
+    color: var(--cinza);
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ============================================================
+   OPÇÕES
+============================================================ */
 
 .opcao {
 
@@ -797,8 +357,16 @@ section {
 
     cursor: pointer;
 
+    transition:
+        background 0.2s,
+        border-color 0.2s;
+
 }
 
+
+/* ============================================================
+   HOVER NAS OPÇÕES
+============================================================ */
 
 .opcao:hover {
 
@@ -806,6 +374,10 @@ section {
 
 }
 
+
+/* ============================================================
+   OPÇÃO SELECIONADA
+============================================================ */
 
 .opcao:has(input:checked) {
 
@@ -816,12 +388,22 @@ section {
 }
 
 
+/* ============================================================
+   RADIO
+============================================================ */
+
 .opcao input {
 
     margin-right: 10px;
 
+    cursor: pointer;
+
 }
 
+
+/* ============================================================
+   LETRA DA ALTERNATIVA
+============================================================ */
 
 .letra {
 
@@ -831,6 +413,10 @@ section {
 
 }
 
+
+/* ============================================================
+   BOTÕES
+============================================================ */
 
 .botoes {
 
@@ -845,7 +431,13 @@ section {
 }
 
 
+/* ============================================================
+   BOTÃO PADRÃO
+============================================================ */
+
 .btn {
+
+    display: inline-block;
 
     border: none;
 
@@ -857,8 +449,16 @@ section {
 
     cursor: pointer;
 
+    text-decoration: none;
+
+    font-size: 14px;
+
 }
 
+
+/* ============================================================
+   BOTÃO PRINCIPAL
+============================================================ */
 
 .principal {
 
@@ -869,12 +469,44 @@ section {
 }
 
 
+/* ============================================================
+   HOVER BOTÃO PRINCIPAL
+============================================================ */
+
+.principal:hover {
+
+    background: var(--principal-hover);
+
+}
+
+
+/* ============================================================
+   BOTÃO SECUNDÁRIO
+============================================================ */
+
 .secundario {
 
     background: #e5e9ed;
 
+    color: var(--texto);
+
 }
 
+
+/* ============================================================
+   HOVER BOTÃO SECUNDÁRIO
+============================================================ */
+
+.secundario:hover {
+
+    background: #d9dee3;
+
+}
+
+
+/* ============================================================
+   ELEMENTO ESCONDIDO
+============================================================ */
 
 .escondido {
 
@@ -883,11 +515,38 @@ section {
 }
 
 
+/* ============================================================
+   RESULTADO
+============================================================ */
+
+.resultado {
+
+    margin-top: 30px;
+
+}
+
+
+/* ============================================================
+   TÍTULO DO RESULTADO
+============================================================ */
+
+.resultado > h2 {
+
+    margin-top: 0;
+
+}
+
+
+/* ============================================================
+   RESULTADO DOS CANDIDATOS
+============================================================ */
+
 .resultado-candidato {
 
     display: grid;
 
-    grid-template-columns: 130px 1fr;
+    grid-template-columns:
+        130px 1fr;
 
     gap: 20px;
 
@@ -895,8 +554,20 @@ section {
 
     margin: 20px 0;
 
+    padding: 20px;
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+    background: var(--branco);
+
 }
 
+
+/* ============================================================
+   FOTO NO RESULTADO
+============================================================ */
 
 .resultado-candidato img {
 
@@ -911,7 +582,54 @@ section {
 }
 
 
+/* ============================================================
+   NOME NO RESULTADO
+============================================================ */
+
+.resultado-candidato h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* ============================================================
+   TEXTO NO RESULTADO
+============================================================ */
+
+.resultado-candidato p {
+
+    color: var(--cinza);
+
+    margin: 8px 0;
+
+}
+
+
+/* ============================================================
+   PERCENTUAL
+============================================================ */
+
+.percentual {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: var(--texto) !important;
+
+}
+
+
+/* ============================================================
+   BARRA DE RESULTADO
+============================================================ */
+
 .barra {
+
+    width: 100%;
 
     height: 12px;
 
@@ -924,6 +642,10 @@ section {
 }
 
 
+/* ============================================================
+   BARRA PREENCHIDA
+============================================================ */
+
 .barra-preenchida {
 
     height: 100%;
@@ -933,14 +655,336 @@ section {
 }
 
 
-.percentual {
+/* ============================================================
+   DESTAQUE DO MAIOR RESULTADO
+============================================================ */
 
-    font-size: 20px;
+.maior-resultado {
+
+    border: 2px solid var(--principal);
+
+}
+
+
+/* ============================================================
+   EMPATE
+============================================================ */
+
+.empate {
+
+    margin: 20px 0;
+
+    padding: 18px;
+
+    background: var(--suave);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 12px;
+
+}
+
+
+/* ============================================================
+   PÁGINA INICIAL
+============================================================ */
+
+.inicio {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 60px 20px;
+
+}
+
+
+/* ============================================================
+   CABEÇALHO DA HOME
+============================================================ */
+
+.cabecalho {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+
+.cabecalho h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.cabecalho p {
+
+    font-size: 18px;
+
+    color: var(--cinza);
+
+}
+
+
+/* ============================================================
+   ESCOLHA DA ELEIÇÃO
+============================================================ */
+
+.escolha {
+
+    text-align: center;
+
+}
+
+
+.escolha h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ============================================================
+   CARDS DA PÁGINA INICIAL
+============================================================ */
+
+.opcoes-eleicao {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+/* ============================================================
+   CARD DA ELEIÇÃO
+============================================================ */
+
+.card-eleicao {
+
+    display: block;
+
+    padding: 40px 30px;
+
+    background: var(--branco);
+
+    color: var(--texto);
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+
+}
+
+
+/* ============================================================
+   HOVER CARD DA ELEIÇÃO
+============================================================ */
+
+.card-eleicao:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ============================================================
+   ÍCONE
+============================================================ */
+
+.icone {
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ============================================================
+   TÍTULO DO CARD DA ELEIÇÃO
+============================================================ */
+
+.card-eleicao h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ============================================================
+   TEXTO DO CARD DA ELEIÇÃO
+============================================================ */
+
+.card-eleicao p {
+
+    color: var(--cinza);
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ============================================================
+   TEXTO FINAL DO CARD
+============================================================ */
+
+.card-eleicao span {
 
     font-weight: bold;
 
 }
 
+
+/* ============================================================
+   PÁGINA DE PROPOSIÇÕES
+============================================================ */
+
+
+/* ============================================================
+   CARD DA PROPOSIÇÃO
+============================================================ */
+
+.proposicao {
+
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+
+    padding: 24px;
+
+    background: var(--branco);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* ============================================================
+   TÍTULO DA PROPOSIÇÃO
+============================================================ */
+
+.proposicao h2 {
+
+    margin: 0 0 15px 0;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+
+}
+
+
+/* ============================================================
+   TEXTO DA PROPOSIÇÃO
+============================================================ */
+
+.proposicao p {
+
+    margin: 0 0 15px 0;
+
+    color: var(--cinza);
+
+    line-height: 1.6;
+
+}
+
+
+/* ============================================================
+   ÁREA DO BOTÃO DA PROPOSIÇÃO
+============================================================ */
+
+.acoes-proposicao {
+
+    display: block;
+
+    margin-top: 20px;
+
+}
+
+
+/* ============================================================
+   BOTÃO VER NA CÂMARA
+============================================================ */
+
+.acoes-proposicao .btn {
+
+    display: inline-block;
+
+    position: static;
+
+    width: auto;
+
+    height: auto;
+
+    min-height: 0;
+
+    margin: 0;
+
+    padding: 10px 18px;
+
+    line-height: 1.4;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+}
+
+
+/* ============================================================
+   RODAPÉ
+============================================================ */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 60px;
+
+    padding: 30px 20px;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ============================================================
+   RESPONSIVIDADE — TABLETS
+============================================================ */
 
 @media (max-width: 800px) {
 
@@ -951,10 +995,59 @@ section {
 
     }
 
+
+    .opcoes-eleicao {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .resultado-candidato {
+
+        grid-template-columns:
+            100px 1fr;
+
+    }
+
+
+    .resultado-candidato img {
+
+        width: 100px;
+
+        height: 130px;
+
+    }
+
 }
 
 
+/* ============================================================
+   RESPONSIVIDADE — CELULAR
+============================================================ */
+
 @media (max-width: 600px) {
+
+    .container {
+
+        width: 94%;
+
+    }
+
+
+    header {
+
+        padding: 40px 0;
+
+    }
+
+
+    h1 {
+
+        font-size: 2rem;
+
+    }
+
 
     .grid-candidatos {
 
@@ -962,31 +1055,91 @@ section {
 
     }
 
+
+    .propostas,
+    .pergunta,
+    .resultado {
+
+        padding: 18px;
+
+    }
+
+
+    .pergunta h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .opcao {
+
+        padding: 14px;
+
+    }
+
+
     .botoes {
 
         flex-direction: column;
 
     }
 
+
+    .botoes .btn {
+
+        width: 100%;
+
+    }
+
+
     .resultado-candidato {
 
         grid-template-columns: 1fr;
 
+        text-align: center;
+
     }
 
-}
 
-/* ============================================================
-   BOTÃO DA PROPOSIÇÃO
-   ============================================================ */
+    .resultado-candidato img {
 
-.proposicao .btn.principal {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 10px 18px;
-    line-height: 1.4;
-    height: auto;
-    min-height: auto;
-    box-sizing: border-box;
+        width: 130px;
+
+        height: 160px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .barra {
+
+        text-align: left;
+
+    }
+
+
+    .proposicao {
+
+        padding: 18px;
+
+    }
+
+
+    .proposicao h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .acoes-proposicao .btn {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
 }
