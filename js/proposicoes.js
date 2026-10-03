@@ -6,8 +6,9 @@ const candidatos = {
 
     A: "Benedita da Silva",
     B: "Carlos Jordy",
-    C: "Carlos Portinho",
-    D: "Pedro Paulo"
+    C: "Pedro Paulo",
+    D: "Carlos Portinho",
+    E: "Monica Benicio",
 
 };
 
