@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Questionário de Alinhamento — Deputado Estadual RJ 2026
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="container">
+
+        <span class="badge">
+            ELEIÇÕES RJ 2026
+        </span>
+
+        <h1>
+            Questionário de Alinhamento Legislativo
+        </h1>
+
+        <p>
+            Deputado Estadual — Rio de Janeiro
+        </p>
+
+        <p>
+            Responda às perguntas de acordo com suas próprias
+            prioridades e compare suas respostas com proposições
+            legislativas e documentos públicos associados aos
+            parlamentares pesquisados.
+        </p>
+
+        <p class="aviso">
+            O resultado apresenta uma correspondência matemática
+            entre suas respostas e as proposições utilizadas como
+            referência. Não constitui recomendação de voto.
+        </p>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+    <!-- =====================================================
+         CANDIDATOS
+         ===================================================== -->
+
+    <section class="propostas">
+
+        <h2>
+            Deputados Estaduais — RJ
+        </h2>
+
+        <p>
+            As alternativas foram construídas a partir de
+            proposições legislativas e documentos públicos
+            utilizados como fonte.
+        </p>
+
+        <div
+            id="candidatos"
+            class="grid-candidatos">
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         QUESTIONÁRIO
+         ===================================================== -->
+
+    <form id="questionario">             
+
+        <div id="perguntas"></div>
+
+        <!-- =====================================================
+             BOTÕES
+             ===================================================== -->
+
+        <div class="botoes">
+
+            <button
+                type="button"
+                id="limpar"
+                class="btn secundario">
+
+                Limpar
+
+            </button>
+
+
+            <button
+                type="submit"
+                class="btn principal">
+
+                Ver comparação
+
+            </button>
+
+        </div>
+
+
+    </form>
+
+
+
+    <!-- =====================================================
+         RESULTADO
+         ===================================================== -->
+
+    <section
+        id="resultado"
+        class="resultado escondido">
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            Projeto informativo independente.
+            As correspondências são baseadas em proposições
+            legislativas e documentos públicos utilizados como fonte.
+        </p>
+
+        <p>
+            Consulte as fontes oficiais para conhecer integralmente
+            as proposições e a atuação parlamentar de cada candidato.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/deputadoEstadual.js"></script>
+
+
+</body>
+
+</html>
