@@ -9,7 +9,7 @@ const candidatos = {
         nome: "Benedita da Silva",
         partido: "PT",
         perfil:
-            "Foco na defesa dos direitos trabalhistas, combate à discriminação de raça e gênero, cotas na educação, apoio à cultura e fortalecimento da seguridade social.",
+            "Pauta Social-Trabalhista / Cotas Raciais, Igualdade Étnica e SUS",
         foto: "assets/fotos/benedita.jpg"
     },
 
@@ -18,7 +18,7 @@ const candidatos = {
         nome: "Carlos Jordy",
         partido: "PL",
         perfil:
-            "Foco na neutralidade ideológica na educação, flexibilização do acesso a armas de fogo, rigor penal sem acordos em corrupção e flexibilização de modelos de trabalho.",
+            "Pauta Conservadora / Garantia da Propriedade Privada e Liberdade de Expressão",
         foto: "assets/fotos/jordy.jpg"
     },
 
@@ -27,7 +27,7 @@ const candidatos = {
         nome: "Pedro Paulo",
         partido: "PSD",
         perfil:
-            "Foco em responsabilidade e renegociação fiscal com condicionantes sociais, transparência em métricas policiais e portas de saída em programas de transferência de renda.",
+            "Pauta Liberal-Social / Responsabilidade Fiscal com Metas Sociais, Defesa do Contribuinte e Porta de Saída de Auxílios",
         foto: "assets/fotos/pedropaulo.jpg"
     },
 
@@ -36,8 +36,17 @@ const candidatos = {
         nome: "Carlos Portinho",
         partido: "PL",
         perfil:
-            "Foco no combate ao crime organizado no setor econômico, preservação da liberdade de expressão na internet, incentivo às Sociedades Anônimas do Futebol (SAF) e modernização de instrumentos de mercado.",
+            "Pauta Liberal-Econômica e Liberdades Digitais / Combate a Crimes Econômicos, PIX no Setor Público e Marco Civil da Internet",
         foto: "assets/fotos/portinho.jpg"
+    },
+
+    E: {
+        numero: "500",
+        nome: "Monica Benicio",
+        partido: "PSOL",
+        perfil:
+            "Pauta Progressista Urbana / Direitos Humanos, Gênero e Diversidade",
+        foto: "assets/fotos/monicabenicio.jpg"
     }
 
 };
@@ -47,32 +56,31 @@ const candidatos = {
 // PERGUNTAS
 // ============================================================
 
-// ============================================================
-// PERGUNTAS
-// ============================================================
-
 const perguntas = [
 
     {
         titulo:
-            "1. Segurança Pública e Combate ao Crime",
+            "1. Segurança Pública",
 
         tema:
-            "O que deve ser a principal prioridade no combate à violência?",
+            "Qual deve ser a principal prioridade na segurança pública?",
 
         opcoes: {
 
             A:
-                "Punir com mais severidade os crimes de preconceito de raça, cor e gênero, tratando-os como crimes gravíssimos.",
+                "Garantir os direitos das pessoas, usar câmeras nos uniformes dos policiais, criar canais para receber reclamações e melhorar o atendimento policial especializado.",
 
             B:
-                "Facilitar o direito do cidadão ter e transportar armas para se defender e proibir acordos que reduzam penas para corruptos.",
+                "Proteger o direito à propriedade, retirar rapidamente pessoas que ocupem propriedades ilegalmente e garantir melhores condições de trabalho para os policiais.",
 
             C:
-                "Obrigar as polícias a divulgarem claramente à população quantos crimes elas conseguem resolver de fato.",
+                "Divulgar quantos crimes são solucionados pela polícia e permitir que os municípios tenham uma atuação maior na segurança pública.",
 
             D:
-                "Combater com rigor o crime organizado na economia e fazer o preso que trabalha contribuir para a Previdência (INSS)."
+                "Combater fortemente organizações criminosas que movimentam grandes setores da economia e preparar policiais para atender pessoas com deficiência.",
+
+            E:
+                "Combater a violência contra mulheres e pessoas de diferentes grupos, evitar abordagens policiais violentas e fiscalizar a atuação das forças de segurança."
 
         }
 
@@ -81,24 +89,27 @@ const perguntas = [
 
     {
         titulo:
-            "2. Trabalho, Emprego e Renda",
+            "2. Transporte e Serviços Públicos",
 
         tema:
-            "Como o governo deve cuidar dos empregos e dos direitos dos trabalhadores?",
+            "Qual deve ser a prioridade nos transportes públicos?",
 
         opcoes: {
 
             A:
-                "Proteger trabalhadores com menos garantias, como empregados domésticos, e proibir grávidas de trabalharem em locais perigosos à saúde.",
+                "Usar parte dos impostos para diminuir o preço das passagens e oferecer transporte gratuito para idosos e estudantes de baixa renda.",
 
             B:
-                "Permitir que patrão e empregado combinem horários flexíveis por hora, sem precisar seguir todas as regras da carteira assinada (CLT).",
+                "Exigir que as empresas de transporte cumpram seus contratos, combater fraudes e evitar interferências desnecessárias do governo na economia.",
 
             C:
-                "Exigir metas de saúde e educação das famílias do Bolsa Família para ajudá-las a conquistar independência do benefício.",
+                "Dar benefícios às empresas somente quando elas cumprirem metas de melhoria do transporte, das ruas e da infraestrutura.",
 
             D:
-                "Criar regras para empresas darem parte de suas ações aos funcionários e dar desconto em impostos para reformar os portos do país."
+                "Permitir o pagamento por PIX nos serviços públicos federais e mostrar claramente de onde vem o dinheiro usado nas obras públicas.",
+
+            E:
+                "Criar o programa Tarifa Zero, oferecendo transporte público gratuito nos municípios."
 
         }
 
@@ -107,24 +118,27 @@ const perguntas = [
 
     {
         titulo:
-            "3. Educação, Cultura e Internet",
+            "3. Trabalho e Emprego",
 
         tema:
-            "Qual deve ser o papel do governo na educação, na cultura e no que as pessoas dizem na internet?",
+            "Como devem ser protegidos os direitos dos trabalhadores?",
 
         opcoes: {
 
             A:
-                "Garantir cotas para negros e alunos pobres nas faculdades públicas e dar auxílio financeiro para o trabalhador acessar eventos culturais.",
+                "Garantir os mesmos direitos trabalhistas para empregadas domésticas, regulamentar a profissão de cuidador de idosos e estabelecer salários mínimos para essas profissões.",
 
             B:
-                "Criar o programa \"Escola sem Partido\" para impedir que professores façam propaganda política ou ideológica em sala de aula.",
+                "Dar mais liberdade para empresas e trabalhadores fazerem seus acordos, simplificar as regras e diminuir a interferência do governo nos contratos.",
 
             C:
-                "Exigir transparência e metas de qualidade antes de liberar dinheiro público para projetos e entidades sociais.",
+                "Atualizar as leis trabalhistas para incluir formas de trabalho como o home office e criar regras de transparência nas relações de trabalho.",
 
             D:
-                "Proteger a liberdade de expressão na internet, proibindo que postagens sejam apagadas sem decisão da Justiça, e apoiar eventos esportivos."
+                "Dar mais segurança aos contratos entre empresas e trabalhadores, facilitar a inovação e diminuir a burocracia para as empresas.",
+
+            E:
+                "Criar licença menstrual, garantir salários iguais para homens e mulheres e proteger trabalhadores de condições de calor extremo."
 
         }
 
@@ -133,24 +147,27 @@ const perguntas = [
 
     {
         titulo:
-            "4. Apoio Social e Cuidado com as Pessoas",
+            "4. Programas Sociais e Desigualdade",
 
         tema:
-            "Como o governo deve ajudar e proteger a população?",
+            "Qual deve ser a prioridade dos programas sociais?",
 
         opcoes: {
 
             A:
-                "Criar leis severas contra o preconceito e abrir delegacias e centros de apoio especializados para mulheres e minorias.",
+                "Ampliar as cotas para pessoas negras e de baixa renda nas universidades e garantir recursos permanentes para os serviços de assistência social.",
 
             B:
-                "Garantir que o governo seja neutro e fiscalize com rigor o dinheiro repassado para ONGs e associações.",
+                "Concentrar os programas sociais nas pessoas em situação de extrema pobreza e não usar cotas ou critérios baseados em grupos sociais.",
 
             C:
-                "Pagar um valor extra no Bolsa Família para famílias que têm pessoas com deficiência.",
+                "Criar um bônus para famílias que recebem o Bolsa Família quando elas atingirem metas de saúde e educação, ajudando-as a melhorar de vida.",
 
             D:
-                "Treinar policiais e agentes de segurança para atenderem com respeito e preparo pessoas com deficiência ou autismo."
+                "Criar políticas que unam desenvolvimento econômico, melhoria dos serviços públicos, proteção social e defesa dos consumidores.",
+
+            E:
+                "Criar políticas específicas para mulheres e pessoas LGBTQIA+, incluindo vagas em creches e moradia para vítimas de violência."
 
         }
 
@@ -159,32 +176,62 @@ const perguntas = [
 
     {
         titulo:
-            "5. Gestão do Dinheiro Público e Obras",
+            "5. Impostos e Gastos Públicos",
 
         tema:
-            "Como o governo deve organizar as contas públicas e as melhorias nas cidades?",
+            "Como devem ser cobrados os impostos e administrado o dinheiro público?",
 
         opcoes: {
 
             A:
-                "Criar áreas protegidas para cuidar da natureza e incentivar pequenos negócios comunitários.",
+                "Fazer quem ganha mais pagar proporcionalmente mais impostos, criar um imposto sobre grandes fortunas e reduzir impostos sobre itens básicos e a agricultura familiar.",
 
             B:
-                "Fiscalizar de perto todas as contas e compras do governo para evitar desperdício e corrupção.",
+                "Reduzir gastos públicos, simplificar os impostos e controlar o crescimento das dívidas do governo.",
 
             C:
-                "Permitir que prefeituras cobrem uma taxa para reformar áreas de comércio e cortar descontos de impostos quando o governo estiver sem dinheiro.",
+                "Renegociar as dívidas dos estados e municípios com o governo federal, mas exigir metas para melhorar a saúde e a educação, além de proteger os direitos dos contribuintes.",
 
             D:
-                "Obrigar órgãos do governo a aceitarem pagamento por Pix e divulgar na internet de onde vem o dinheiro de cada obra."
+                "Combater fraudes e outras práticas ilegais e reduzir o desperdício de dinheiro nas empresas públicas.",
+
+            E:
+                "Criar um orçamento específico para políticas voltadas às mulheres e cobrar mais impostos sobre grandes fortunas."
+
+        }
+
+    },
+
+
+    {
+        titulo:
+            "6. Liberdade de Expressão e Internet",
+
+        tema:
+            "Como devem ser tratadas a liberdade de expressão e as redes sociais?",
+
+        opcoes: {
+
+            A:
+                "Aumentar a presença de diferentes grupos raciais na televisão, no cinema e em outras produções culturais e apoiar projetos culturais.",
+
+            B:
+                "Impedir que as plataformas retirem conteúdos dos usuários sem uma decisão judicial e apoiar o programa Escola sem Partido.",
+
+            C:
+                "Criar regras para os jogos e apostas e aumentar a proteção contra golpes financeiros e crimes digitais contra pessoas vulneráveis.",
+
+            D:
+                "Garantir a liberdade de expressão e assegurar que qualquer medida judicial contra conteúdos na internet siga regras claras e o direito de defesa.",
+
+            E:
+                "Combater discursos de ódio e ataques contra mulheres nas redes sociais e na internet."
 
         }
 
     }
 
 ];
-
-
 // ============================================================
 // ELEMENTOS DO HTML
 // ============================================================
@@ -213,15 +260,13 @@ function mostrarCandidatos() {
 
     candidatosHTML.innerHTML = "";
 
-
     // FOR...IN
-    // Percorre A, B, C e D
+    // Percorre A, B, C, D e E
 
     for (let letra in candidatos) {
 
         let candidato =
             candidatos[letra];
-
 
         candidatosHTML.innerHTML += `
 
@@ -235,7 +280,7 @@ function mostrarCandidatos() {
                 <div class="candidato-conteudo">
 
                     <h3>
-                        ${candidato.nome} — ${candidato.numero}
+                        ${candidato.nome}
                     </h3>
 
                     <p>
@@ -276,7 +321,6 @@ function mostrarPerguntas() {
 
     perguntasHTML.innerHTML = "";
 
-
     perguntas.forEach(
         function(pergunta, indice) {
 
@@ -299,7 +343,7 @@ function mostrarPerguntas() {
             // FOR...IN
             // =================================================
             //
-            // Percorre as propriedades A, B, C e D
+            // Percorre as propriedades A, B, C, D e E
             // do objeto pergunta.opcoes
             //
 
@@ -354,7 +398,8 @@ function calcularPontuacao() {
         A: 0,
         B: 0,
         C: 0,
-        D: 0
+        D: 0,
+        E: 0
 
     };
 
@@ -375,7 +420,6 @@ function calcularPontuacao() {
 
                 let letra =
                     resposta.value;
-
 
                 pontuacao[letra]++;
 
@@ -543,6 +587,15 @@ function mostrarResultado(pontuacao) {
                     <p>
                         ${candidato.perfil}
                     </p>
+                    <a
+                    
+                        href="proposicoes.html?candidato=${letra}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="pdf"
+                    >
+                        Ver proposições
+                    </a>
 
                     <p class="percentual">
 
