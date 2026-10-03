@@ -19,7 +19,7 @@ const candidatos = {
         partido: "PSDB",
         perfil:
             "Saúde mental infantojuvenil, capacitação profissional, assistência social e fortalecimento de iniciativas comunitárias.",
-        foto: "assets/fotos/leovieira.webp"
+        foto: "assets/fotos/190002550038.jpg"
     },
 
     C: {
